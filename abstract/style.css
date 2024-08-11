@@ -1,0 +1,268 @@
+@font-face {
+    font-family: "GT America Standard";
+    src: url("./GT-America-Standard-Regular-Trial.otf");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "GT America Standard";
+    text-decoration: none;
+}
+
+body {
+    color: #fff;
+
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: 5s ease-in;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 766px) {
+    .buttons {
+        display: none;
+
+    }
+
+    header {
+        position: relative;
+        display: flex;
+    }
+
+    .logo {
+        width: 80%;
+        height: 1.8rem;
+        display: flex;
+        gap: 0.3rem;
+    }
+
+    .logo img {
+        width: 2rem;
+    }
+
+    #logo-text {
+        font-size: 1.3rem !important;
+        width: 90%;
+
+    }
+
+    .mobile-menu {
+        gap: 1.1rem;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mobile-overlay {
+        width: 100%;
+        height: 45vh;
+        background: #191A1B;
+        position: absolute;
+        left: 0.1px;
+        top: 4.4rem;
+        padding: 2rem;
+    }
+
+    .menu-btns {
+        display: flex !important;
+        gap: 1.3rem;
+        margin: 0 5rem 0;
+    }
+
+    .mm-links {
+        color: white;
+        margin: 20px;
+        font-size: 2rem;
+    }
+
+    hr {
+        width: 70%;
+        margin: 1.5rem auto;
+    }
+
+    .help-btn {
+        width: 19rem;
+        height: 3rem;
+        position: absolute;
+        left: 18.5rem !important;
+        top: 26rem !important;
+        font-size: 1.8rem;
+    }
+
+    .quick-links {
+        color: #000000;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    footer {
+        grid-template-columns: repeat(2, 1fr) !important;
+
+    }
+}
+
+header {
+    padding: 2.5rem;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    background: #000000;
+    transition: 2s ease;
+}
+
+.menu-btns {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.logo {
+    width: 60%;
+    height: 2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.logo img {
+    width: 2rem;
+}
+
+#logo-text {
+    font-size: 1.4rem;
+    width: 90%;
+
+}
+
+.logo>span {
+    padding: 3px;
+    font-size: 1.4rem;
+}
+
+.btn {
+    color: #fff;
+    padding: 18px;
+    border-radius: 5px;
+    border: 2px solid #dadbf1;
+    font-size: large;
+}
+
+.cta {
+    background: #4C5FD5;
+    border: 2px solid #4C5FD5;
+}
+
+.help-form {
+    background: #dadbf1;
+    text-align: center;
+    color: #000000;
+    height: 60vh;
+    font-size: 1rem;
+    padding-top: 4rem;
+
+}
+
+.help-form:focus {
+    border: 2px solid #4C5FD5;
+}
+
+.help-form>h1 {
+    font-size: 4rem;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+.help-form form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+
+.help-form form input {
+    width: 70%;
+    height: 4rem;
+    outline: none;
+    border: 1px solid #000000;
+    font-size: 1.3rem;
+    padding-left: 5px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.help-form form input:hover {
+    border: 2px solid #4C5FD5;
+    box-shadow: 0 0 2px #4C5FD2;
+
+}
+
+.help-form form input::placeholder {
+    font-size: 1rem;
+    padding: 0.2rem;
+}
+
+.help-btn {
+    width: 19rem;
+    height: 3rem;
+    position: absolute;
+    right: 5.2rem;
+    top: 21rem;
+    font-size: 1.8rem;
+    text-decoration: none !important;
+}
+
+.ham {
+    color: white;
+    font-size: 1.8rem;
+}
+
+/* Quick links styles start here */
+
+.quick-links {
+    color: #000000;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 5rem;
+    margin: 0 auto;
+    gap: 0.1px;
+}
+
+.quick-links>.link-item {
+    display: flex;
+    gap: 1.2rem;
+    padding: 10%;
+    line-height: 1.9rem;
+}
+
+.quick-links>.link-item img {
+    width: 80px;
+}
+
+footer {
+    background: #000000;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 2rem;
+    gap: 20px;
+    padding: 3.5rem;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer h3 {
+    font-size: 1.7rem;
+}
