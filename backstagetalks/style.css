@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url("./Roboto-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+@media screen and (max-width:500px){
+    footer {
+        display: flex !important;
+        flex-direction: column !important;
+        gap:2rem !important;
+        text-align: center;
+    }
+    .vision {
+        width: 100% !important;
+    }
+}
+html {
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f6e0a4; 
+    z-index: 1000; 
+}
+
+.logo img {
+    width: 50%;
+}
+
+.mag-container {
+    display: flex;
+    flex-direction: column;
+    transition: 5s ease-out;
+}
+
+.mag-text {
+    display: flex;
+    flex-direction: column;
+    gap:0.43rem;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 120vh;
+    flex-direction: column;
+    text-align: center;
+    scroll-snap-align: start; 
+}
+
+section img {
+    width: 400px;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+.wrapper {
+    display: inline;
+    white-space: nowrap;
+}
+
+body {
+    background: #f6e0a4;
+}
+#issue-8 {
+    background: #f6e0a4;
+}
+#issue-7 {
+    background: #ff608c !important;
+}
+#issue-6 {
+    background: #fff;
+}
+#issue-6 h1 #issue-6 p b{
+    color:black;
+}
+#issue-6 a, p {
+    color:#ff608c;
+}
+.pink {
+    color:#ff608c;
+}
+.black {
+    color:black;
+}
+#issue-5 {
+    background: #00c1b5;
+}
+#issue-5 a, p {
+    color:white;
+}
+#issue-4{
+    background:#ff6519;
+}
+#issue-3 {
+    background: #ffbe00;
+}
+#issue-2 {
+    background:#1d3fbb;
+}
+#issue-1 {
+    background: #e30512;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    padding:1rem;
+    scroll-snap-align: start;
+}
+.vision p, footer p{
+    color: black !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.vision span {
+    color: black !important;
+    font-size: 0.8rem;
+}
+.vision a {
+    color: black !important;
+    text-decoration: underline;
+}
+.vision a:hover {
+    text-decoration: none;
+}
+.vision {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    width:20%;
+    padding-left: 1rem;
+}
